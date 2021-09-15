@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
 app.get('/drinks', (req, res) => {
     res.render('drinks_index.ejs',{allDrinks: drinks});
   });
+
+app.get('/drinks/:id', (req,res)=>{
+    res.send(req.params.id)
+})
 // Web server. Listen on port 3000
 
 app.listen(port, ()=>{
