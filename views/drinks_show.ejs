@@ -13,7 +13,7 @@
         <h1>At foo bar</h1>   
             
         <h2><%=drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></h2>
-        <img src="<%=drink.image %>">
+        <img src="<%=drink.image.slice(0, -3) + "png" %>">
         <h3>Price: <%=drink.price %></h3>
         <br>
         <br>
