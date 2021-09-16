@@ -10,17 +10,18 @@
                 </style>
     </head>
     <body>
-        <h1>At drink bar</h1>   
-            
-        <h2><%=drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></h2>
-        <img src="<%=drink.image.slice(0, -3) + "png" %>">
-        <h3>Price: <%=drink.price %></h3>
-        <br>
-        <br>
+        <h1>Welcome to gitPub</h1>
+        <h2>Food Menu</h2>
+        <ul>
+            <% for(let i=0; i< allFoods.length;i++){%>
+                <li>
+                    <a href="/food/<%=i%>">
+                    <%=allFoods[i].name %></a>
+                </li>
+            <%} %>
+        </ul>
         <br>
         <a href="/">back to the main</a><br>
-            
-        
 
     </body> 
 </html>
